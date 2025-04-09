@@ -1,0 +1,20 @@
+
+
+https://softwareupdate.vmware.com/cds/vmw-desktop/player/
+
+Update (2024-06-20): Since this comment still gets readers I can just as well fill out some more info.
+
+https://softwareupdate.vmware.com/cds/vmw-desktop/ seems to me to be the server where this binaries look for updates, so there you can find:
+
+    VMware Workstation: https://softwareupdate.vmware.com/cds/vmw-desktop/ws/
+
+    VMware Player: https://softwareupdate.vmware.com/cds/vmw-desktop/player/
+
+    VMware Fusion: https://softwareupdate.vmware.com/cds/vmw-desktop/fusion/
+
+    VMware Tools (can be found inside the VMware Workstation dirs):
+    --- https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/linux/packages/
+    --- https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.5.2/23775571/windows/packages/
+    However, I've had some problems with 17.5.2 (the Broadcom release), so I suspect the 17.5.1 one behaves a bit nicer during install/upgrade , especially on the tools part.
+
+I'm no expert on these things, just a paying licensee of VMware Workstation 17 who got disowned by Broadcom. I get by with my previously saved valid and legal license key and then hunting like mad to find urls where I can download the binaries.
