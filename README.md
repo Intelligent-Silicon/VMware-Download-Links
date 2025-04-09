@@ -2,8 +2,15 @@
 
 Login to the Broadcom Account. Registering a new account if neccessary.
 
-Once logged in, navigate to https://support.broadcom.com/group/ecx/downloads or click the links direct.
+Once logged in, navigate to:
 
+https://support.broadcom.com/group/ecx/downloads 
+
+or
+
+https://support.broadcom.com/group/ecx/free-downloads
+
+or click on the links below.
 
 ## VMware Player Download
 
