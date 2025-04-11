@@ -28,3 +28,14 @@ https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Works
 
 https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Tools&freeDownloads=true
 
+
+
+### Spectre / Meltdown Side Channel Mitigation VMX setting.
+
+To switch off Side Channel mitigation add the following line to the closed VM .vmx file.
+
+This will speed up the operation of a virtual machine considerably!
+
+```
+ulm.disableMitigations = "TRUE"
+```
