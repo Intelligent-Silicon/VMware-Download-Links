@@ -69,6 +69,7 @@ ExclusionProcess
 
 Files: 
 (All Exe's Found In "C:\Program Files (x86)\VMware\VMware Workstation")
+```
 C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe
 C:\Program Files (x86)\VMware\VMware Workstation\7za.exe
 C:\Program Files (x86)\VMware\VMware Workstation\autostart-helper.exe
@@ -115,7 +116,7 @@ C:\Program Files (x86)\Common Files\VMware\USB\DriverCache\vnetlib64.exe
 
 C:\Windows\SysWOW64\vmnetdhcp.exe
 C:\Windows\SysWOW64\vmnat.exe
-
+```
 
 
 
