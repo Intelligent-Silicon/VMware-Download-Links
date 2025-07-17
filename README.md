@@ -48,6 +48,32 @@ https://learn.microsoft.com/en-us/defender-endpoint/configure-process-opened-fil
 
 https://learn.microsoft.com/en-us/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus
 
+https://learn.microsoft.com/en-us/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus#hyper-v-exclusions
+
+Common Mistakes
+
+https://learn.microsoft.com/en-us/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus#folder-locations
+
+https://learn.microsoft.com/en-us/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus#file-extensions
+
+https://learn.microsoft.com/en-us/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus#processes
+
+
+https://learn.microsoft.com/en-us/defender-endpoint/indicator-ip-domain
+
+https://learn.microsoft.com/en-us/defender-endpoint/indicators-overview
+
+```
+You can use IP and URL/Domain indicators to manage site access.
+
+To block connections to an IP address, type the IPv4 address in dotted-quad form (e.g. 8.8.8.8). For IPv6 addresses, specify all 8 segments (e.g. 2001:4860:4860:0:0:0:0:8888). Note that wildcards and ranges are not supported.
+
+To block connections to a domain and any of its subdomains, specify the domain (e.g. example.com). This indicator will match example.com as well as sub.example.com and anything.sub.example.com.
+
+To block a specific URL path, specify the URL path (e.g. https://example.com/block). This indicator will match resources under the /block path on example.com. Note that HTTPS URL paths will only be matched in Microsoft Edge; HTTP URL paths can be matched in any browser.
+```
+
+
 Windows Security -> Virus & Threat Protection -> Virus & Threat Protection Settings - Manage Settings -> Exclusions
 
 
