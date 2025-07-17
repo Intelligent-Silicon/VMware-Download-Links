@@ -147,9 +147,10 @@ C:\Windows\SysWOW64\vmnat.exe
 
 
 Folders
+```
 C:\Program Files (x86)\VMware\VMware Workstation
 C:\Users\Admin1\Documents\Virtual Machines
-
+```
 ```
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\VMware\VMware Workstation"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Users\Admin1\Documents\Virtual Machines"
