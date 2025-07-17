@@ -93,8 +93,7 @@ ExclusionProcess
 ```
 
 
-Files: 
-(All Exe's Found In "C:\Program Files (x86)\VMware\VMware Workstation")
+All Exe's Found
 ```
 C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe
 C:\Program Files (x86)\VMware\VMware Workstation\7za.exe
@@ -148,11 +147,12 @@ C:\Windows\SysWOW64\vmnat.exe
 
 Folders
 ```
-C:\Program Files (x86)\VMware\VMware Workstation
+C:\Program Files (x86)\VMware
 C:\Users\Admin1\Documents\Virtual Machines
+C:\Program Files (x86)\Common Files\VMware
 ```
 ```
-PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\VMware\VMware Workstation"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\VMware"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Users\Admin1\Documents\Virtual Machines"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\Common Files\VMware"
 ```
@@ -160,11 +160,8 @@ PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\
 ```
 PS C:\WINDOWS\system32> $ExclPath = Get-MpPreference
 PS C:\WINDOWS\system32> $ExclPath.ExclusionPath
-C:\mount_Win10_22H2_x32_Install_Pro_N_WIM
-C:\mount_Win10_22H2_x32_ISO
+C:\Program Files (x86)\Common Files\VMware
 C:\Program Files (x86)\VMware
-C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe
-C:\Users\Admin1\Documents\ISO Files
 C:\Users\Admin1\Documents\Virtual Machines
 ```
 
@@ -172,18 +169,18 @@ C:\Users\Admin1\Documents\Virtual Machines
 ## Processes to Exclude
 A Process can be excluded by its Image Name which is the filename without the path, or by the full path and image name.
 eg
-Image Name:vmware.exe
-Full Path:C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe
+Image Name:```vmware.exe```
+Full Path:```C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe```
 
 or by a wildcard
 eg
+```
 C:\Program Files (x86)\VMware\VMware Workstation\*
+```
 
 ```
-PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\VMware\VMware Workstation\*"
-PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\VMware\VMware Workstation\x64\*"
-PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\Common Files\VMware\USB\*"
-PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\Common Files\VMware\USB\DriverCache\*"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\VMware\*"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\Common Files\VMware\*"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Windows\SysWOW64\vmnetdhcp.exe"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Windows\SysWOW64\vmnat.exe"
 ```
@@ -191,11 +188,8 @@ PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Windows\SysWOW64\
 ```
 PS C:\WINDOWS\system32> $ExclProcess = Get-MpPreference
 PS C:\WINDOWS\system32> $ExclProcess.ExclusionProcess
-C:\Program Files (x86)\Common Files\VMware\USB\*
-C:\Program Files (x86)\Common Files\VMware\USB\DriverCache\*
-C:\Program Files (x86)\VMware\VMware Workstation\*
-C:\Program Files (x86)\VMware\VMware Workstation\VMware.exe
-C:\Program Files (x86)\VMware\VMware Workstation\x64\*
+C:\Program Files (x86)\Common Files\VMware\*
+C:\Program Files (x86)\VMware\*
 C:\Windows\SysWOW64\vmnat.exe
 C:\Windows\SysWOW64\vmnetdhcp.exe
 ```
