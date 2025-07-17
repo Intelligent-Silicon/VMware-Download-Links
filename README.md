@@ -42,6 +42,8 @@ ulm.disableMitigations = "TRUE"
 
 ### MS Windows Defender - Exclusions
 
+Obviously publishing folder structures and naming conventions are a security risk for wannabe hackers and their viral software, but hey ho!
+
 https://learn.microsoft.com/en-us/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus
 
 https://learn.microsoft.com/en-us/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus
@@ -155,13 +157,17 @@ C:\Program Files (x86)\Common Files\VMware
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\VMware"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Users\Admin1\Documents\Virtual Machines"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Program Files (x86)\Common Files\VMware"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Mount_*"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionPath "C:\Users\Admin1\AppData\Local\GitHubDesktop"
 ```
 
 ```
 PS C:\WINDOWS\system32> $ExclPath = Get-MpPreference
 PS C:\WINDOWS\system32> $ExclPath.ExclusionPath
+C:\Mount_*
 C:\Program Files (x86)\Common Files\VMware
 C:\Program Files (x86)\VMware
+C:\Users\Admin1\AppData\Local\GitHubDesktop
 C:\Users\Admin1\Documents\Virtual Machines
 ```
 
@@ -183,13 +189,18 @@ PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x8
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Program Files (x86)\Common Files\VMware\*"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Windows\SysWOW64\vmnetdhcp.exe"
 PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Windows\SysWOW64\vmnat.exe"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Mount_*"
+PS C:\WINDOWS\system32> Add-MpPreference -ExclusionProcess "C:\Users\Admin1\AppData\Local\GitHubDesktop\*"
+
 ```
 
 ```
 PS C:\WINDOWS\system32> $ExclProcess = Get-MpPreference
 PS C:\WINDOWS\system32> $ExclProcess.ExclusionProcess
+C:\Mount_*
 C:\Program Files (x86)\Common Files\VMware\*
 C:\Program Files (x86)\VMware\*
+C:\Users\Admin1\AppData\Local\GitHubDesktop\*
 C:\Windows\SysWOW64\vmnat.exe
 C:\Windows\SysWOW64\vmnetdhcp.exe
 ```
