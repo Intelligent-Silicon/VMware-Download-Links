@@ -204,3 +204,11 @@ C:\Users\Admin1\AppData\Local\GitHubDesktop\*
 C:\Windows\SysWOW64\vmnat.exe
 C:\Windows\SysWOW64\vmnetdhcp.exe
 ```
+
+VMware Tools
+
+This webpage https://knowledge.broadcom.com/external/article/313371/vmware-tools-compatibility-with-guest-op.html lists the versions of VMware tools that works with different versions of Windows. Windows Server 2003, Windows XP, Windows 2000 : Versions 10.0.0 through 10.0.12 Use winPreVista.iso
+
+Download from https://packages.vmware.com/tools/releases/10.0.12/windows/
+
+VMware-tools-windows-10.0.12-4448496.iso works and can be installed on Windows XP using Workstation 17.6.3 build-24583834
